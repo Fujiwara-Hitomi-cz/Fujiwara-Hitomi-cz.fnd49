@@ -1,16 +1,6 @@
 "use strict";
 // 1行目に記載している "use strict" は削除しないでください
-// function test(actual, expected) {
-//    if (JSON.stringify(actual) === JSON.stringify(expected)) {
-//       console.log("OK! Test PASSED.");
-//    } else {
-//       console.error("Test FAILED. Try again!");
-//       console.log("    actual: ", actual);
-//       console.log("  expected: ", expected);
-//       console.trace();
-//    }
-// }
-//　テスト定型文は削除しないこと
+
 // ボタンをクリックしたらclickButton関数を呼び出す
 const button = document.getElementById("button");
 button.addEventListener("click", clickButton);
