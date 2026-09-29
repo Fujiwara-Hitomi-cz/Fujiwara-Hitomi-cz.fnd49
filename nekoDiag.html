@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ぴったりねこ診断</title>
+  <link rel="stylesheet" href="nekoDiag.css">
+</head>
+
+<body>
+
+  <div class="title">
+    <img id="cat2" src="image/1120.png" alt="抱っこねこ">
+
+    <h1>
+      <span>あ</span>なたにぴったりな <span>ね</span>こ診断
+    </h1>
+
+    <img id="cat1" src="image/889.png" alt="リモハラねこ">
+  </div>
+
+  <div class="main">
+    <h3>
+      あなたの普段に近い回答にチェックを入れて「診断する」を押してください
+    </h3>
+  </div>
+
+  <div class="questionBox">
+    <p>Q1. 休日のおすすめの過ごし方は？</p>
+    <form name="form1">
+      <label><input type="radio" name="q1" value=0>森林浴やハイキングでリフレッシュ　　</label><br>
+      <label><input type="radio" name="q1" value=3>波の音を聞きながらのんびり散歩　　</label><br>
+      <label><input type="radio" name="q1" value=5>行ったことがない街へ旅行する</label><br>
+    </form>
+    <br>
+  </div>
+
+  <div class="questionBox">
+    <p>Q2. 好きな食べ物のタイプは？</p>
+    <form name="form2">
+      <label><input type="radio" name="q2" value=0>旬の野菜やキノコ、和食　　</label><br>
+      <label><input type="radio" name="q2" value=3>新鮮な魚介類・シーフード　　</label><br>
+      <label><input type="radio" name="q2" value=5>スパイスの効いたエスニックや洋食</label><br>
+    </form>
+    <br>
+  </div>
+
+  <div class="questionBox">
+    <p>Q3. あなたの性格に近いものは？</p>
+    <form name="form3">
+      <label><input type="radio" name="q3" value="0">慎重でじっくり考えてから行動する　　</label><br>
+      <label><input type="radio" name="q3" value="3">穏やかで人と過ごす時間を大切にする　　</label><br>
+      <label><input type="radio" name="q3" value="5">好奇心旺盛で思い立ったらすぐ行動する</label><br>
+    </form>
+    <br>
+  </div>
+  <div>
+    <p></p>
+    <button id="button" type="button">診断する</button>
+    <p> </p>
+  </div>
+
+
+  <!-- これより下は診断結果エリア -->
+  <div id="resultArea">
+    <div id="resultMountain" class="resultBox">
+      <h2 class="resultTitle">あなたは「山にいるねこ」タイプ！🐈</h2>
+      <img class="resultImage" src="image/mountain.JPG" alt="山のねこ">
+      <p class="photoSpot">＜撮影地：愛知県のとある山で撮影＞</p>
+      <p class="resultText">自然豊かな場所が好きで落ち着いているあなたには、マイナスイオンに包まれて過ごす山のねこがピッタリです！</p>
+    </div>
+
+    <div id="resultSea" class="resultBox">
+      <h2 class="resultTitle">あなたは「海にいるねこ」タイプ！🐈</h2>
+      <img class="resultImage" src="image/seas.JPEG" alt="海のねこ">
+      <p class="photoSpot">＜広島県のとある港で撮影＞</p>
+      <p class="resultText">波のようにゆったりした心を持つあなたには、のんびり屋で釣り人や漁師から魚のおすそ分けを楽しみに過ごす海辺のねこがピッタリです！</p>
+    </div>
+
+    <div id="resultOverseas" class="resultBox">
+      <h2 class="resultTitle">あなたは「海外にいるねこ」タイプ！🐈</h2>
+      <img class="resultImage" src="image/overseas.JPG" alt="海外のねこ">
+      <p class="photoSpot">＜ハワイ島のとある公園で撮影＞</p>
+      <p class="resultText">好奇心旺盛で新しいことが大好きなあなたには、日本にはない魅力を知っている海外のねこがピッタリです！</p>
+    </div>
+
+    <div id="resultSpecial" class="resultBox">
+      <h2 class="resultTitle">あなたは「ねこ中のねこ」です！🐈</h2>
+      <img class="resultImage" src="image/special.JPG" alt="ねこ中のねこ">
+      <p class="photoSpot">＜ハワイ島のとある公園で撮影＞</p>
+      <p class="resultText">すべての要素を持ち合わせるあなたは、まさしく「ねこ」そのもの！どこでもねこのように気ままに生きて行けるでしょう。</p>
+    </div>
+  </div>
+
+
+  <script src="nekoDiag.js"></script>
+</body>
+
+</html>
